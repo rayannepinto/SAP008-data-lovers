@@ -5,11 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Familjen Grotesk", sans-serif;
 }
 
 body {
   background-color: #2485af;
-  font-family: "Familjen Grotesk", sans-serif;
 }
 
 header {
@@ -74,6 +74,7 @@ header {
   border-radius: 10px;
   text-shadow: 0 1.4px 1.4px #363f5f;
   display: flex;
+  flex-direction: column;
   border: none;
   text-align: center;
   justify-items: center;
@@ -84,7 +85,6 @@ header {
   height: 3rem;
   padding: 0.5rem 1rem;
   border: none;
-  font-family: "Familjen Grotesk";
   font-weight: bold;
   font-size: 1.2rem;
   color: #2e5990;
@@ -92,14 +92,15 @@ header {
   border-radius: 10px 0px 0px;
 }
 
-.center{
+.center {
   background-color: #ffcc03;
-  width: 600px;
-  height: 100px;
+  width: 100%;
+  height: 90px;
   border: none;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
-  .btn-control {
+
+.btn-control {
   width: 20vw;
   max-width: 150px;
   margin: 20px;
@@ -107,21 +108,43 @@ header {
   font-size: 16px;
   font-weight: bold;
   border: 4px solid #000000;
-  border-radius: 15px; 
+  border-radius: 15px;
   box-shadow: 2px 2px 5px rgb(63, 35, 35);
-  }
+}
 
-  .order-pkmn {
-    background: #3e7be5;
-  }
+.order-pkmn {
+  background: #3e7be5;
+}
 
-  .numOrder {
-    background: #de3f2d;
-  }
+.numOrder {
+  background: #de3f2d;
+}
 
-  .type-order{
-    background: #14b534
-  }
+.type-order {
+  background: #14b534;
+}
+
+.scroll-card {
+  width: 100%;
+  height: auto;
+  background-color: #e6d69a;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  border-radius: 0px 0px 10px 10px;
+  padding: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.card {
+  background: #e9dcdc;
+  border: 5px solid #2485af;
+  border-radius: 20px;
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+}
+
 .team-card {
   margin-top: 4rem;
   box-sizing: border-box;
@@ -136,7 +159,6 @@ header {
   width: 37rem;
   height: 3rem;
   background-color: #ffcc03;
-  font-family: "Familjen Grotesk";
   font-weight: bold;
   color: #2e5990;
   font-size: 1.3rem;
@@ -150,7 +172,6 @@ header {
   height: 4rem;
   padding: 0.5rem 1rem;
   border: none;
-  font-family: "Familjen Grotesk";
   font-weight: bold;
   font-size: 1.6rem;
   color: #2e5990;
@@ -164,7 +185,6 @@ header {
   height: 4rem;
   padding: 0.5rem 1rem;
   border: none;
-  font-family: "Familjen Grotesk";
   font-weight: bold;
   font-size: 1.6rem;
   color: #2e5990;
@@ -222,7 +242,6 @@ header {
   width: 37rem;
   height: 3rem;
   background-color: #2e5990;
-  font-family: "Familjen Grotesk";
   font-weight: bold;
   color: #fff;
   font-size: 1.3rem;
@@ -235,7 +254,6 @@ header {
   height: 3rem;
   padding: 0.5rem 1rem;
   border: none;
-  font-family: "Familjen Grotesk";
   font-weight: bold;
   font-size: 1.5rem;
   color: #fff;
@@ -244,12 +262,11 @@ header {
   margin-top: 3rem;
   margin-bottom: 10rem;
 }
-.reset-button:hover{
+.reset-button:hover {
   width: 12rem;
   height: 3rem;
   padding: 0.5rem 1rem;
   border: none;
-  font-family: "Familjen Grotesk";
   font-weight: bold;
   font-size: 1.5rem;
   color: #fff;
@@ -270,7 +287,6 @@ header {
 }
 
 .footer {
-  font-family: "Familjen Grotesk";
   font-weight: bold;
   padding: 4rem 0 2rem;
   color: #fff;
@@ -313,7 +329,7 @@ header {
   }
 }
 
-@media all and (max-width: 550px){
+@media all and (max-width: 550px) {
   .cards-block-two {
     width: 100vw;
     display: flex;
