@@ -15,7 +15,7 @@
     </header>
 
     <img class="banner" src="img/banner.png"
-      alt="Imagem com quase todos os pokémons juntos, com um retangulo por cima contendo uma pokébola com raios e ao lado direito escrito: Sua batalha nunca mais será a mesma!" />
+      alt="Imagem com quase todos os pokémons juntos, com um retângulo por cima contendo uma pokébola com raios e ao lado direito escrito: Sua batalha nunca mais será a mesma!" />
 
     <h3 class="explication">
       Aqui você poderá escolher os Pokémons e se preparar contra o time
@@ -29,28 +29,29 @@
     </h3>
 
     <div class="cards-block-two">
-      <div class="search-card" id="search-card">
+      <div id="search-card" class="search-card">
 
         <nav class="center">
-          <select id="order-pkmn" class="btn-control order-pkmn">
-            <option value="all">Nome</option>
+          <select id="pkmOrder" class="btn-control order-pkmn">
+            <option value="all" disabled selected style="display: none">NOME</option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
           </select>
 
           <select id="numOrder" class="btn-control numOrder">
-            <option value="all">Número</option>
+            <option value="all" disabled selected style="display: none">NÚMERO</option>
             <option value="0-9">Crescente</option>
             <option value="9-0">Decrescente</option>
           </select>
 
           <select id="typeOrder" class="btn-control type-order">
-            <option value="all">Tipo</option>
+            <option value="typeTitle" disabled selected style="display: none">TIPO</option>
+            <option value="all">Todos</option>
             <option value="Water">Water</option>
             <option value="Fire">Fire</option>
             <option value="Bug">Bug</option>
             <option value="Dragon">Dragon</option>
-            <option value="Eletric">Eletric</option>
+            <option value="Electric">Electric</option>
             <option value="Ghost">Ghost</option>
             <option value="Ice">Ice</option>
             <option value="Fighting">Fighting</option>
@@ -66,15 +67,7 @@
             <option value="Steel">Steel</option>
           </select>
         </nav>
-
-        <div class="scroll-card" id="scroll-card">
-          <!-- <div class="card">
-            <img src="https://www.serebii.net/pokemongo/pokemon/001.png" alt="foto pokemon">
-            <p>001</p>
-            <p>Bulbasaur</p>
-            <p>Grass</p>
-          </div> -->
-        </div>
+        <div id="scroll-card" class="scroll-card"></div>
       </div>
 
       <div class="team-generation-components">
