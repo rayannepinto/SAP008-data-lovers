@@ -6,7 +6,7 @@ import { filterByType, filterByName, filterByNum } from "./data.js";
 let pkmnDataList = data.pokemon;
 
 /* Aparecer os pokemons no card */
-const scrollCard = document.getElementById("scroll-card");
+const scrollCard = document.getElementById("cardScroll");
 
 function pokemonList(pokemons) {
   scrollCard.innerHTML = "";
@@ -16,7 +16,7 @@ function pokemonList(pokemons) {
 
     card.innerHTML = `
     <div class="card">
-    <img src=${pokemon.img} alt="foto pokemon">
+    <img src=${pokemon.img} alt="Foto pokémon">
     <p>${pokemon.num}</p>
     <p>${pokemon.name}</p>
     <p>${pokemon.type}</p>
@@ -30,7 +30,7 @@ function pokemonList(pokemons) {
 pokemonList(pkmnDataList);
 
 /* Acionando os filtros */
-const alphabeticOrdenation = document.getElementById("pkmOrder");
+const alphabeticOrdenation = document.getElementById("pokemonOrder");
 const numberAscDescOrdenation = document.getElementById("numOrder");
 const typeFilter = document.getElementById("typeOrder");
 
