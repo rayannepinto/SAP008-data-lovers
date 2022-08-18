@@ -8,38 +8,27 @@
 </head>
 
 <body>
-  <section class="block-one-information">
+  <header>
+    <img class="logo" src="img/logo.png" alt="Logo PokéTeam" />
+  </header>
 
-    <header>
-      <img class="logo" src="img/logo.png" alt="Logo PokéTeam" />
-    </header>
+  <img class="banner" src="img/banner.png"
+    alt="Imagem com quase todos os pokémons juntos, com um retângulo por cima contendo uma pokébola com raios e ao lado direito escrito: Sua batalha nunca mais será a mesma!" />
 
-    <img class="banner" src="img/banner.png"
-      alt="Imagem com quase todos os pokémons juntos, com um retângulo por cima contendo uma pokébola com raios e ao lado direito escrito: Sua batalha nunca mais será a mesma!" />
+  <main>
+    <h3 class="orientation">FILTRE, BUSQUE E CLIQUE NO POKÉMON PARA VER AS INFORMAÇÕES:</h3>
 
-    <h3 class="explication">
-      Aqui você poderá escolher os Pokémons e se preparar contra o time
-      adversário ou estar pronto para vencer sua batalha com o time ideal!
-    </h3>
-  </section>
-
-  <section class="block-two-research">
-    <h3 class="orientation">
-      FILTRE, BUSQUE E CLIQUE NOS POKÉMONS ESCOLHIDOS
-    </h3>
-
-    <div class="cards-block-two">
-      <div id="search-card" class="search-card">
-
+    <section class="display-cards">
+      <div class="search-card">
         <nav class="center">
-          <select id="pkmOrder" class="btn-control order-pkmn">
-            <option value="all" disabled selected style="display: none">NOME</option>
+          <select id="pokemonOrder" class="btn-control pokemon-order">
+            <option value="all">NOME</option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
           </select>
 
-          <select id="numOrder" class="btn-control numOrder">
-            <option value="all" disabled selected style="display: none">NÚMERO</option>
+          <select id="numOrder" class="btn-control num-order">
+            <option value="all">NÚMERO</option>
             <option value="0-9">Crescente</option>
             <option value="9-0">Decrescente</option>
           </select>
@@ -67,35 +56,12 @@
             <option value="Steel">Steel</option>
           </select>
         </nav>
-        <div id="scroll-card" class="scroll-card"></div>
+        <div id="cardScroll" class="card-scroll"></div>
       </div>
 
-      <div class="team-generation-components">
-        <div class="team-card">
-          <p class="selected-team">TIME SELECIONADO:</p>
-        </div>
-        <button class="team-button">GERAR TIME</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="block-three-result">
-
-    <h3 class="result">RESULTADO</h3>
-
-    <div class="cards-block-three">
-      <div class="generated-card">
-        <div class="team-result-card">
-          <p class="best-team-card-title">O MELHOR TIME PARA A BATALHA:</p>
-        </div>
-        <button class="reset-button">RESET</button>
-      </div>
-
-      <div class="information-card">
-        <!-- Nesta div aparecerá as informações sobre o pokemon (ao clicar no "+") -->
-      </div>
-    </div>
-  </section>
+      <div class="display-card information-display"></div>
+    </section>
+  </main>
 
   <footer class="footer">PokéTeam, 2022 © Nathalia Rigo e Rayanne Pinto.<br> Todos os direitos reservados.</footer>
 
