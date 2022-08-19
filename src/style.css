@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;700&family=Press+Start+2P&family=Silkscreen&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Dosis&family=Familjen+Grotesk:wght@400;500;700&family=Oswald&family=Press+Start+2P&family=Silkscreen&display=swap');
 
 * {
   margin: 0;
@@ -38,10 +38,45 @@ header {
   font-weight: bold;
   color: #2e5990;
   font-size: 1.5rem;
-  margin-top: 7rem;
+  margin-top: 2rem;
   text-align: center;
   padding: 0.4rem;
   text-shadow: 0 1.4px 1.4px #363f5f;
+}
+
+.search-space {
+  padding-top: 30px;
+  padding-bottom: 50px;;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-search{
+ width: 300px;
+ height: 30px;
+ background-color: #ffffff;
+ border-radius: 8px;
+ font-family: 'Dosis', sans-serif;
+ text-transform: uppercase;
+ border: 3px solid #011b37;
+ font-weight: bold;
+}
+
+.clean-name-button {
+  background-color: #011b37;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Familjen Grotesk", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+.clean-name-button:hover {
+  background-color: #e28f3c;
 }
 
 .display-cards {
@@ -50,7 +85,7 @@ header {
 }
 
 .search-card {
-  margin-top: 4rem;
+  margin-top: 1rem;
   box-sizing: border-box;
   width: 37rem;
   height: 49rem;
@@ -129,7 +164,7 @@ header {
 }
 
 .information-display {
-  margin-top: 4rem;
+  margin-top: 1rem;
   box-sizing: border-box;
   width: 37rem;
   height: 49rem;
