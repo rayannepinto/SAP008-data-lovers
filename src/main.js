@@ -17,7 +17,7 @@ function pokemonList(pokemons) {
     <img src=${pokemon.img} alt="Foto pokémon">
     <p class="number-style">${pokemon.num}</p>
     <p class="name-style">${pokemon.name}</p>
-    <p class="type-style">${pokemon.type}</p>
+    <p class="type-style ${pokemon.type}">${pokemon.type.join(" ")}</p>
     </div>
     `;
 
