@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Dosis&family=Familjen+Grotesk:wght@400;500;700&family=Oswald&family=Press+Start+2P&family=Silkscreen&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Dosis&family=Familjen+Grotesk:wght@400;500;700&family=Oswald&family=Poppins:wght@500&family=Press+Start+2P&family=Silkscreen&display=swap');
 
 * {
   margin: 0;
@@ -7,6 +7,7 @@
   text-decoration: none;
   font-family: "Familjen Grotesk", sans-serif;
 }
+
 
 body {
   background-color: #2485af;
@@ -92,12 +93,30 @@ header {
   height: 83vh;
   background: #e6d69a;
   border-radius: 10px 10px 0px 10px;
-  text-shadow: 0 1.4px 1.4px #363f5f;
   display: flex;
   flex-direction: column;
   border: none;
   text-align: center;
   justify-items: center;
+}
+
+.number-style {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+.name-style {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: #011b37;
+  border-radius: 10px;
+}
+
+.type-style {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }
 
 .filter {
