@@ -12,12 +12,18 @@ function pokemonList(pokemons) {
   pokemons.forEach((pokemon) => {
     const card = document.createElement("div");
 
+    let typesPkmn = "";
+
+    pokemon.type.forEach((type) => {
+      typesPkmn += `<p class="type-style ${type}">${type}</p>`
+    })
+    
     card.innerHTML = `
     <div class="card">
     <img src=${pokemon.img} alt="Foto pokémon">
     <p class="number-style">${pokemon.num}</p>
     <p class="name-style">${pokemon.name}</p>
-    <p class="type-style ${pokemon.type}">${pokemon.type.join(" ")}</p>
+    ${typesPkmn}
     </div>
     `;
 
