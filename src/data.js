@@ -1,3 +1,4 @@
+
 //* filtro por tipo *//
 const filterByType = (data, valor) => {
   /* definindo os parâmetros */
@@ -50,4 +51,10 @@ const filterByNum = (data, valor) => {
   }
 };
 
-export { filterByName, filterByNum, filterByType };
+const searchByName = (pokemon, name) => {
+  return pokemon.filter(pokemon => {
+    return pokemon.name.toLowerCase().includes(name.toLowerCase())
+  });
+}
+
+export { filterByName, filterByNum, filterByType, searchByName };
