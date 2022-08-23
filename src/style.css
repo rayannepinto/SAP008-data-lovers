@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Dosis&family=Familjen+Grotesk:wght@400;500;700&family=Oswald&family=Poppins:wght@500&family=Press+Start+2P&family=Silkscreen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Dosis&family=Familjen+Grotesk:wght@400;500;700&family=Oswald&family=Poppins:wght@500&family=Press+Start+2P&family=Silkscreen&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,6 @@
   text-decoration: none;
   font-family: "Familjen Grotesk", sans-serif;
 }
-
 
 body {
   background-color: #2485af;
@@ -32,32 +31,35 @@ header {
   border-bottom: 5px solid #ffcc03;
 }
 
-.orientation {
+/* .orientation {
   width: 100%;
   height: 3rem;
   background-color: #ffcc03;
   font-weight: bold;
   color: #2e5990;
   font-size: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   padding: 0.4rem;
   text-shadow: 0 1.4px 1.4px #363f5f;
-}
+} */
 
 .search-space {
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 10px;
   align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .input-search {
-  width: 300px;
-  height: 30px;
+  width: 400px;
+  height: 45px;
   background-color: #ffffff;
   border-radius: 8px;
   font-family: "Familjen Grotesk", sans-serif;
@@ -69,7 +71,7 @@ header {
 .clean-name-button {
   background-color: #011b37;
   width: 100px;
-  height: 30px;
+  height: 45px;
   border: none;
   border-radius: 10px;
   font-family: "Familjen Grotesk", sans-serif;
@@ -81,6 +83,84 @@ header {
   background-color: #e28f3c;
 }
 
+.center {
+  background-color: #ffcc03;
+  width: 85vw;
+  height: max-content;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter {
+  width: 9rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2e5990;
+  text-shadow: 0 1.4px 1.4px #363f5f;
+  border-radius: 10px 0px 0px;
+}
+
+.btn-control {
+  width: 20vw;
+  max-width: 150px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(63, 35, 35);
+}
+
+.pokemon-order {
+  background: #5ab2d8;
+}
+
+.pokemon-order:hover {
+  background: #5dc5ee;
+}
+
+.num-order {
+  background: #db6154;
+}
+
+.num-order:hover {
+  background: #fa7d6f;
+}
+
+.type-order {
+  background: #14b534;
+}
+
+.type-order:hover {
+  background: #23ca44;
+}
+
+.card-scroll {
+  width: 100%;
+  height: auto;
+  background-color: #e6d69a;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-between;
+  border-radius: 0px 0px 0px 10px;
+  padding: 1rem;
+}
+
+.card {
+  background: #e9dcdc;
+  border: 5px solid #2485af;
+  border-radius: 20px;
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+}
+
 .display-cards {
   display: flex;
   justify-content: center;
@@ -90,7 +170,7 @@ header {
   margin-top: 1rem;
   box-sizing: border-box;
   width: 85vw;
-  height: 83vh;
+  height: 85vh;
   background: #e6d69a;
   border-radius: 10px 10px 0px 10px;
   display: flex;
@@ -101,7 +181,7 @@ header {
 }
 
 .number-style {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-weight: bold;
   border-bottom: solid 1px #000;
   margin-bottom: 1rem;
@@ -109,18 +189,23 @@ header {
 
 .name-style {
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-weight: bold;
   color: #fff;
   background-color: #011b37;
-  border-radius: 10px;
 }
 
 .type-style {
   text-transform: capitalize;
   margin-top: 0.5rem;
-  border-radius: 20px;
   color: rgb(255, 255, 255);
+  justify-content: center;
+  width: 100px;
+  border-radius: 4px;
+}
+
+.type-teste {
+  display: flex;
   justify-content: center;
 }
 
@@ -193,70 +278,6 @@ header {
 
 .steel {
   background: linear-gradient(to left, #bdc3c7, #2c3e50);
-}
-
-.filter {
-  width: 9rem;
-  height: 3rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #2e5990;
-  text-shadow: 0 1.4px 1.4px #363f5f;
-  border-radius: 10px 0px 0px;
-}
-
-.center {
-  background-color: #ffcc03;
-  width: 85vw;
-  height: 40vh;
-  border: none;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.btn-control {
-  width: 20vw;
-  max-width: 150px;
-  margin: 20px;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgb(63, 35, 35);
-}
-
-.pokemon-order {
-  background: #7dc5e4;
-}
-
-.num-order {
-  background: #db6154;
-}
-
-.type-order {
-  background: #14b534;
-}
-
-.card-scroll {
-  width: 100%;
-  height: auto;
-  background-color: #e6d69a;
-  overflow: auto;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  justify-content: space-between;
-  border-radius: 0px 0px 0px 10px;
-  padding: 1rem;
-}
-
-.card {
-  background: #e9dcdc;
-  border: 5px solid #2485af;
-  border-radius: 20px;
-  margin: 0.5rem;
-  padding-bottom: 1rem;
 }
 
 .footer {

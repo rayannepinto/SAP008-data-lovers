@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="./img/pikachufavi.png">
 </head>
 
-<body>
+<body>,
   <header>
     <img class="logo" src="img/logo.png" alt="Logo PokéTeam" />
   </header>
@@ -17,15 +17,15 @@
     alt="Imagem com quase todos os pokémons juntos, com um retângulo por cima contendo uma pokébola com raios e ao lado direito escrito: Sua batalha nunca mais será a mesma!" />
 
   <main>
-    <h3 class="orientation">
-      BUSQUE, FILTRE E CLIQUE NO POKÉMON PARA VER AS INFORMAÇÕES!
-    </h3>
+    <!-- <h3 class="orientation">
+      BUSQUE OU FILTRE E CLIQUE NO POKÉMON PARA VER AS INFORMAÇÕES!
+    </h3> -->
 
     <form class="search-space">
       <input type="text" placeholder="BUSCAR POR NOME" class="input-search" id="searchByNameInput" />
       <button id="cleanButton" class="clean-name-button">LIMPAR</button>
     </form>
-
+    
     <section class="display-cards">
       <div class="search-card">
         <nav class="center">
@@ -65,6 +65,7 @@
           </select>
         </nav>
         <div id="cardScroll" class="card-scroll"></div>
+        <div id="modal" class="modal-content"></div>
       </div>
     </section>
   </main>
