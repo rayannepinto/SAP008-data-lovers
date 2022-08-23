@@ -1,5 +1,10 @@
-import { filterByType, filterByName, filterByNum, searchByName } from "./data.js";
-import data from './data/pokemon/pokemon.js'
+import {
+  filterByType,
+  filterByName,
+  filterByNum,
+  searchByName,
+} from "./data.js";
+import data from "./data/pokemon/pokemon.js";
 //* let para termos o datalist dos Pokémons *//
 let pkmnDataList = data.pokemon;
 
@@ -15,17 +20,21 @@ function pokemonList(pokemons) {
     let typesPkmn = "";
 
     pokemon.type.forEach((type) => {
-      typesPkmn += `<p class="type-style ${type}">${type}</p>`
-    })
-    
+      typesPkmn += `<p class="type-style ${type}">${type}</p>`;
+    });
+
     card.innerHTML = `
     <div class="card">
     <img src=${pokemon.img} alt="Foto pokémon">
     <p class="number-style">${pokemon.num}</p>
-    <p class="name-style">${pokemon.name}</p>
-    ${typesPkmn}
+    <p class="name-style">${pokemon.name}</p>    
+    <div class="type-teste">${typesPkmn}</div>
     </div>
     `;
+
+    card.addEventListener("click", function () {
+      clicar(pokemon);
+    });
 
     scrollCard.appendChild(card);
   });
@@ -64,16 +73,18 @@ typeFilter.addEventListener("change", function () {
   pokemonList(pkmnDataList);
 });
 
-document.getElementById('searchByNameInput').addEventListener('keyup', searchName)
+document
+  .getElementById("searchByNameInput")
+  .addEventListener("keyup", searchName);
 
 function searchName(evento) {
-  const name = evento.target.value
-  const result = searchByName(data.pokemon, name)
+  const name = evento.target.value;
+  const result = searchByName(data.pokemon, name);
   pokemonList(result);
 }
 
-const clearButton = document.getElementById('cleanButton')
-function cleanInput(){
-  FormData.reset()
+const clearButton = document.getElementById("cleanButton");
+function cleanInput() {
+  FormData.reset();
 }
-clearButton.addEventListener('click', cleanInput);
+clearButton.addEventListener("click", cleanInput);
