@@ -268,8 +268,8 @@ header {
 .modal-content {
   margin: 0 auto;
   margin-top: 7%;
-  max-width: 25vw;
-  height: 28vw;
+  width: 450px;
+  height: 500px;
   background-color: #e5d69a;
   padding: 0px;
   box-shadow: 0 0 2px #fff;
@@ -344,13 +344,26 @@ header {
   font-size: 1rem;
 }
 
-@media all and (max-width: 1325px) {
-  * {
-    font-size: 20px;
+@media all and (max-width: 1800px) {
+  .card-scroll {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media all and (max-width: 1562px) {
+  .card-main-pokemon {
+    padding: 0rem;
+    height: 46rem;
   }
 
   .card-scroll {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media all and (max-width: 1350px) {
+  * {
+    font-size: 20px;
   }
 
   .card-main-display {
@@ -361,11 +374,36 @@ header {
 
   .card-main-pokemon {
     padding: 0rem;
-    height: 43rem;
+    height: 44rem;
+  }
+
+  .card-scroll {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal-content {
+    width: 550px;
+    height: 600px;
   }
 }
 
-@media all and (max-width: 782px) {
+@media all and (max-width: 1015px) {
+  .card-main-pokemon {
+    padding: 0rem;
+    margin: 0rem;
+    width: 60vw;
+  }
+
+  .nav-order-filter {
+    width: 60vw;
+  }
+
+  .card-scroll {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 900px) {
   header {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -385,16 +423,19 @@ header {
   .card-main-pokemon {
     padding: 0rem;
     margin: 0rem;
-    width: 86vw;
+    width: 50vw;
+  }
+
+  .nav-order-filter {
+    width: 50vw;
   }
 
   .card-scroll {
     padding: 0rem;
     margin: 0rem;
-    width: 86vw;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    padding: 0.3rem;
+    width: 50vw;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5rem;
   }
 
   .footer {
