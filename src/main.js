@@ -48,21 +48,23 @@ const numberAscDescOrdenation = document.getElementById("numOrder");
 const typeFilter = document.getElementById("typeOrder");
 
 alphabeticOrdenation.addEventListener("change", function () {
+  let sortedPokemons = [];
   if (alphabeticOrdenation.value == "A-Z") {
-    filterByName(pkmnDataList, "A-Z");
+    sortedPokemons = filterByName(pkmnDataList, "A-Z");
   } else {
-    filterByName(pkmnDataList, "Z-A");
+    sortedPokemons = filterByName(pkmnDataList, "Z-A");
   }
-  pokemonList(pkmnDataList);
+  pokemonList(sortedPokemons);
 });
 
 numberAscDescOrdenation.addEventListener("change", function () {
+  let sortedPokemons = [];
   if (numberAscDescOrdenation.value == "0-9") {
-    filterByNum(pkmnDataList, "0-9");
+    sortedPokemons = filterByNum(pkmnDataList, "0-9");
   } else {
-    filterByNum(pkmnDataList, "9-0");
+    sortedPokemons = filterByNum(pkmnDataList, "9-0");
   }
-  pokemonList(pkmnDataList);
+  pokemonList(sortedPokemons);
 });
 
 typeFilter.addEventListener("change", function () {
