@@ -1,4 +1,3 @@
-
 //* filtro por tipo *//
 const filterByType = (data, valor) => {
   /* definindo os parâmetros */
@@ -13,19 +12,22 @@ const filterByType = (data, valor) => {
 
 /* filtro por nome dos Pokémons */
 const filterByName = (data, valor) => {
+  const newData = [].concat(data);
   if (valor === "A-Z") {
-    data.sort((a, b) =>
+    newData.sort((a, b) =>
       a.name.localeCompare(b.name)
     ); /* localeCompare compara sequências em uma localidade específica */
   } else {
-    data.sort((a, b) => b.name.localeCompare(a.name));
+    newData.sort((a, b) => b.name.localeCompare(a.name));
   }
+  return newData;
 };
 
 /* filtro pelo número do Pokémon */
 const filterByNum = (data, valor) => {
+  const newData = [].concat(data);
   if (valor === "0-9") {
-    data.sort((a, b) => {
+    newData.sort((a, b) => {
       /* sort para ordenar os items da array */
       if (a.num > b.num) {
         /* Se compare(a, b) for maior que zero, o método sort() classificará b com um índice menor que a, ou seja, b virá primeiro.*/
@@ -39,7 +41,7 @@ const filterByNum = (data, valor) => {
       }
     });
   } else {
-    data.sort((a, b) => {
+    newData.sort((a, b) => {
       if (a.num < b.num) {
         return 1;
       } else if (a.num > b.num) {
@@ -49,12 +51,13 @@ const filterByNum = (data, valor) => {
       }
     });
   }
+  return newData;
 };
 
 const searchByName = (pokemon, name) => {
-  return pokemon.filter(pokemon => {
-    return pokemon.name.toLowerCase().includes(name.toLowerCase())
+  return pokemon.filter((pokemon) => {
+    return pokemon.name.toLowerCase().includes(name.toLowerCase());
   });
-}
+};
 
 export { filterByName, filterByNum, filterByType, searchByName };
