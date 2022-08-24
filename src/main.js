@@ -33,7 +33,7 @@ function pokemonList(pokemons) {
     `;
 
     card.addEventListener("click", function () {
-      clicar(pokemon);
+      openModal(pokemon);
     });
 
     scrollCard.appendChild(card);
@@ -43,7 +43,7 @@ function pokemonList(pokemons) {
 pokemonList(pkmnDataList);
 
 /* Acionando os filtros */
-const alphabeticOrdenation = document.getElementById("pokemonOrder");
+const alphabeticOrdenation = document.getElementById("nameOrder");
 const numberAscDescOrdenation = document.getElementById("numOrder");
 const typeFilter = document.getElementById("typeOrder");
 
@@ -88,3 +88,79 @@ function cleanInput() {
   FormData.reset();
 }
 clearButton.addEventListener("click", cleanInput);
+
+/*Modal*/
+function openModal(pokemon) {
+  const modal = document.getElementById("modalKnowMore");
+
+  if (typeof modal == "undefined" || modal === null) {
+    return;
+  }
+
+  let typesPkmn = "";
+
+  pokemon.type.forEach((type) => {
+    typesPkmn += `<p class="type-style ${type}">${type}</p>`;
+  });
+
+  let resistantPkmn = "";
+
+  pokemon.resistant.forEach((resistant) => {
+    resistantPkmn += `<p class="type-style ${resistant}">${resistant}</p>`;
+  });
+
+  let weaknessesPkmn = "";
+
+  pokemon.weaknesses.forEach((weaknesses) => {
+    weaknessesPkmn += `<p class="type-style ${weaknesses}">${weaknesses}</p>`;
+  });
+
+  const modalBody = document.getElementById("modalBody");
+
+  modalBody.innerHTML = `
+    <div class="modal-body">
+      <div class="card-modal">
+        <img src=${pokemon.img} alt="Foto pokémon">
+        <p class="number-style">${pokemon.num}</p>
+        <p class="name-style">${pokemon.name}</p>    
+        <div class="type-teste">${typesPkmn}</div>
+      </div> 
+
+      <div class="modal-stats">
+        <p class="modal-height">Altura: ${pokemon.size.height}</p>
+        <p class="modal-weight">Peso: ${pokemon.size.weight}</p> <br>
+        <p>Ataque: ${pokemon.stats["base-attack"]}</p>
+        <p>Defesa: ${pokemon.stats["base-defense"]}</p>
+        <p>Energia: ${pokemon.stats["base-stamina"]}</p>
+        <p>HP: ${pokemon.stats["max-hp"]}</p>
+      </div>
+    </div>
+
+    <div class="modal-types"> 
+      <p class="modal-types-title">Resistências:</p>
+      <div class="modal-types-display">${resistantPkmn}</div>
+    </div>
+    
+    <div class="modal-types"> 
+      <p class="modal-types-title">Fraquezas:</p>
+      <div class="modal-types-display">${weaknessesPkmn}</div>
+    </div>    
+  `;
+
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+const button = document.getElementById("closeModalKnowMore");
+button.addEventListener("click", closeModal);
+
+function closeModal(mn) {
+  const modal = document.getElementById("modalKnowMore");
+
+  if (typeof modal == "undefined" || modal === null) {
+    return;
+  }
+
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+}

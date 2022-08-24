@@ -8,42 +8,39 @@
   <link rel="shortcut icon" href="./img/pikachufavi.png">
 </head>
 
-<body>,
+<body>
   <header>
     <img class="logo" src="img/logo.png" alt="Logo PokéTeam" />
   </header>
 
-  <img class="banner" src="img/banner.png"
-    alt="Imagem com quase todos os pokémons juntos, com um retângulo por cima contendo uma pokébola com raios e ao lado direito escrito: Sua batalha nunca mais será a mesma!" />
+  <img class="banner" src="img/banner.png">
+  <alt= Imagem com quase todos os pokémons juntos, com um retângulo por cima contendo uma pokébola com raios e ao lado
+    direito escrito: Sua batalha nunca mais será a mesma! />
 
   <main>
-    <!-- <h3 class="orientation">
-      BUSQUE OU FILTRE E CLIQUE NO POKÉMON PARA VER AS INFORMAÇÕES!
-    </h3> -->
+    <section class="card-main-display">
+      <div class="card-main-pokemon">
+        <form class="search-space">
+          <input type="text" placeholder="BUSCAR POR NOME" class="input-search" id="searchByNameInput" />
+          <button id="cleanButton" class="clean-name-button">LIMPAR</button>
+        </form>
 
-    <form class="search-space">
-      <input type="text" placeholder="BUSCAR POR NOME" class="input-search" id="searchByNameInput" />
-      <button id="cleanButton" class="clean-name-button">LIMPAR</button>
-    </form>
-    
-    <section class="display-cards">
-      <div class="search-card">
-        <nav class="center">
-          <select id="pokemonOrder" class="btn-control pokemon-order">
-            <option value="all">NOME</option>
+        <nav class="nav-order-filter">
+          <select id="nameOrder" class="btn-order name-order">
+            <option value="A-Z">NOME</option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
           </select>
 
-          <select id="numOrder" class="btn-control num-order">
-            <option value="all">NÚMERO</option>
+          <select id="numOrder" class="btn-order num-order">
+            <option value="0-9">NÚMERO</option>
             <option value="0-9">Crescente</option>
             <option value="9-0">Decrescente</option>
           </select>
 
-          <select id="typeOrder" class="btn-control type-order">
+          <select id="typeOrder" class="btn-order type-order">
             <option value="typeTitle" disabled selected style="display: none">TIPO</option>
-            <option value="all">TIPOS</option>
+            <option value="all">TIPO</option>
             <option value="Water">Water</option>
             <option value="Fire">Fire</option>
             <option value="Bug">Bug</option>
@@ -65,9 +62,17 @@
           </select>
         </nav>
         <div id="cardScroll" class="card-scroll"></div>
-        <div id="modal" class="modal-content"></div>
       </div>
     </section>
+
+    <div id="modalKnowMore" class="modal-know-more">
+      <div id="modalContent" class="modal-content">
+        <div class="modal-header">
+          <button id="closeModalKnowMore" class="btn-close">X</button>
+        </div>
+        <div id="modalBody"></div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
