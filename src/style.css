@@ -318,6 +318,7 @@ header {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+  text-align: center;
 }
 
 .modal-types-title {
@@ -332,6 +333,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer {
