@@ -156,7 +156,7 @@ function openModal(pokemon) {
 const button = document.getElementById("closeModalKnowMore");
 button.addEventListener("click", closeModal);
 
-function closeModal(mn) {
+function closeModal() {
   const modal = document.getElementById("modalKnowMore");
 
   if (typeof modal == "undefined" || modal === null) {
