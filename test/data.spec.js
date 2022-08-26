@@ -1,6 +1,6 @@
 import {
-  filterByName,
-  filterByNum,
+  sortByName,
+  sortByNum,
   filterByType,
   searchByName,
 } from "../src/data.js";
@@ -17,16 +17,16 @@ const pokemonsName = [
   },
 ];
 
-describe("filterByName", function () {
+describe("sortByName", function () {
   it("deve ordernar de a-z", function () {
-    const sortedName = filterByName(pokemonsName, "A-Z");
+    const sortedName = sortByName(pokemonsName, "A-Z");
 
     expect(sortedName.length).toEqual(pokemonsName.length);
     expect(sortedName[0].name).toEqual(pokemonsName[1].name);
   });
 
   it("deve ordernar de z-a", function () {
-    const sortedName = filterByName(pokemonsName, "Z-A");
+    const sortedName = sortByName(pokemonsName, "Z-A");
 
     expect(sortedName.length).toEqual(pokemonsName.length);
     expect(sortedName[0].name).toEqual(pokemonsName[2].name);
@@ -48,16 +48,16 @@ const pokemonsNum = [
   },
 ];
 
-describe("filterByNum", function () {
+describe("sortByNum", function () {
   it("deve ordernar de 0-9", function () {
-    const sortedNum = filterByNum(pokemonsNum, "0-9");
+    const sortedNum = sortByNum(pokemonsNum, "0-9");
 
     expect(sortedNum.length).toEqual(pokemonsNum.length);
     expect(sortedNum[0].num).toEqual(pokemonsNum[0].num);
   });
 
   it("deve ordernar de 9-0", function () {
-    const sortedNum = filterByNum(pokemonsNum, "9-0");
+    const sortedNum = sortByNum(pokemonsNum, "9-0");
 
     expect(sortedNum.length).toEqual(pokemonsNum.length);
     expect(sortedNum[0].num).toEqual(pokemonsNum[1].num);
