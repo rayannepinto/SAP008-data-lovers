@@ -1,12 +1,12 @@
-#⚡Data Lovers - PokeInfo 🔍
+# Data Lovers - PokéInfo 🔍 #
 
-*foto da logo aqui*
+![logo do projeto](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/logo.png)
 
 ## Índice
 
 * [1. Resumo do Projeto](#1-resumo-do-projeto)
-* [2. O Usuário](#2-o-usuario)
-* [3. Histórias de Usuários](#3-historias-de-usuarios)
+* [2. O Usuário](#2-o-usuário)
+* [3. Histórias de Usuários](#3-histórias-dos-usuários)
 * [3.1 - O usuário gostaria de ver todos os Pokémons em tela.](#31-o-usuário-gostaria-de-ver-todos-os-pokémons-em-tela)
 * [3.2 O usuário quer procurar seu Pokémon pelo campo de busca.](#32-o-usuário-quer-procurar-seu-pokémon-pelo-campo-de-busca)
 * [3.3 O usuário gostaria de fazer a busca através de um filtro específico.](#33-o-usuário-gostaria-de-fazer-a-busca-através-de-um-filtro-específico)
@@ -22,11 +22,11 @@
 
 ## 1. Resumo do Projeto
 
-Com a **PokeInfo**, o usuário poderá navegar de forma rápida e intuitiva para conseguir capturar as informações que precisa sobre seus Pokémons favoritos. 
+Com a **PokéInfo**, o usuário poderá navegar de forma rápida e intuitiva para conseguir capturar as informações que precisa sobre seus Pokémons favoritos. 
 
 ## 2. O Usuário 
 
-Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas situações, tais dados mostram-se confusos. Por isso, decidimos criar um web aplicativo que permite ao usuário, de **forma sucinta**, pesquisar sobre os dados mais relevante de seus personagens. 
+Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas situações, tais dados mostram-se confusos. Por isso, decidimos criar um web aplicativo que permite ao usuário, de **forma sucinta**, pesquisar sobre os dados mais relevante de seus personagens. Sendo assim, fizemos cards que mostram algumas informações e também um modal com mais algumas.
 
 
 ## 3. Histórias dos Usuários
@@ -42,17 +42,17 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 
 ## 4. Protótipo de Baixa Qualidade ##
 
-*foto do protótipo*
+![Protótipo de Baixa Qualidade](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/baixaqualidade.jpg)
 
 ## 5. Protótipo de Alta Qualidade ##
 
-*foto do protótipo1*
-*foto do protótipo2*
-*foto do protótipo3*
+![foto do protótipo1](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/prototipo1.png)
+![foto do protótipo2](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/prototipo2.png)
+![foto do protótipo3](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/prototipo3.png)
 
 ### 5.1 Paleta de Cores
 
-*foto da paleta de cores*
+![foto da paleta de cores](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/paletadecores.png)
 
 ## 6. Resultado do Projeto ##
 
@@ -64,4 +64,10 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 
 ## 8. Desenvolvedoras
 
+![Foto Nathalia](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/nathdev.png) ![Foto Rayanne](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/raydev.png)
+
 ## 9. Well done!
+
+#### Por hoje é só, pessoal! ####
+
+![Gif Pikachu](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/ohyeahpikachugif.gif)
