@@ -52,7 +52,7 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 
 ### 5.1 Paleta de Cores
 
-![foto da paleta de cores](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/paletadecores.png)
+![foto da paleta de cores](https://github.com/ncrigo/SAP008-data-lovers/blob/0dd45b374b989ca05e8e6f495a3bf3494cf4f415/src/img/paletadecores.png)
 
 ## 6. Resultado do Projeto ##
 
@@ -60,11 +60,12 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 
 ## 7. Tecnologias Utilizadas ##
 
-*foto das tecnologias**
+![Tecnologias Utilizadas](https://github.com/ncrigo/SAP008-data-lovers/blob/0dd45b374b989ca05e8e6f495a3bf3494cf4f415/src/img/linguagens.png)
 
-## 8. Desenvolvedoras
+## 8. Desenvolvedoras 
+* <a href="https://github.com/ncrigo">Nathalia Rigo</a> e <a href="https://github.com/rayannepinto">Rayanne Pinto</a></div>
 
-![Foto Nathalia](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/nathdev.png) ![Foto Rayanne](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/raydev.png)
+![Foto Nathalia](https://github.com/ncrigo/SAP008-data-lovers/blob/0dd45b374b989ca05e8e6f495a3bf3494cf4f415/src/img/nathdev.png)![Foto Rayanne](https://github.com/ncrigo/SAP008-data-lovers/blob/0dd45b374b989ca05e8e6f495a3bf3494cf4f415/src/img/raydev.png)
 
 ## 9. Well done!
 
