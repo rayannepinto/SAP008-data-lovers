@@ -3,18 +3,18 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>PokéTeam</title>
+  <title>PokéInfo</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="./img/pikachufavi.png">
 </head>
 
 <body>
   <header>
-    <img class="logo" src="img/logo.png" alt="Logo PokéTeam" />
+    <img class="logo" src="img/logo.png" alt="Logo PokéInfo" />
   </header>
 
-  <img class="banner" src="img/banner.png" alt= "Imagem com quase todos os pokémons juntos, com um retângulo por cima contendo uma pokébola com raios e ao lado
-  direito escrito: Sua batalha nunca mais será a mesma!"/>
+  <img class="banner" src="img/banner_pokemon.png" alt="Imagem com quase todos os pokémons juntos, com um retângulo por cima contendo uma pokébola com raios e ao lado
+  direito escrito: Capture as melhores informações do seu pokémon aqui!" />
 
   <main>
     <section class="card-main-display">
@@ -24,20 +24,22 @@
           <button id="cleanButton" class="clean-name-button">LIMPAR</button>
         </form>
 
-        <nav class="nav-order-filter">
-          <select id="nameOrder" class="btn-order name-order">
+        <div id="typePercentageCard" class="type-percentage-card"></div>
+
+        <nav class="nav-sort-filter">
+          <select id="sortName" class="btn-nav sort-name">
             <option value="A-Z">NOME</option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
           </select>
 
-          <select id="numOrder" class="btn-order num-order">
+          <select id="sortNum" class="btn-nav sort-num">
             <option value="0-9">NÚMERO</option>
             <option value="0-9">Crescente</option>
             <option value="9-0">Decrescente</option>
           </select>
 
-          <select id="typeOrder" class="btn-order type-order">
+          <select id="typeFilter" class="btn-nav type-filter">
             <option value="typeTitle" disabled selected style="display: none">TIPO</option>
             <option value="all">TIPO</option>
             <option value="Water">Water</option>
@@ -65,17 +67,17 @@
     </section>
 
     <div id="modalKnowMore" class="modal-know-more">
-      <div id="modalContent" class="modal-content">
+      <div class="modal-card">
         <div class="modal-header">
           <button id="closeModalKnowMore" class="btn-close">X</button>
         </div>
-        <div id="modalBody"></div>
+        <div id="modalContent"></div>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    PokéTeam, 2022 © Nathalia Rigo e Rayanne Pinto.<br />
+    PokéInfo, 2022 © Nathalia Rigo e Rayanne Pinto.<br />
     Todos os direitos reservados.
   </footer>
 

@@ -1,17 +1,5 @@
-//* filtro por tipo *//
-const filterByType = (data, valor) => {
-  /* definindo os parâmetros */
-  const filterPkmnByType = data.filter(
-    /* abrindo uma const para receber o filtro */
-    (pokemon) =>
-      pokemon.type.indexOf(valor.toLowerCase()) >
-      -1 /* buscando valor que queremos pelo indexOf */
-  );
-  return filterPkmnByType;
-};
-
 /* filtro por nome dos Pokémons */
-const filterByName = (data, valor) => {
+const sortByName = (data, valor) => {
   const newData = [].concat(data);
   if (valor === "A-Z") {
     newData.sort((a, b) =>
@@ -24,7 +12,7 @@ const filterByName = (data, valor) => {
 };
 
 /* filtro pelo número do Pokémon */
-const filterByNum = (data, valor) => {
+const sortByNum = (data, valor) => {
   const newData = [].concat(data);
   if (valor === "0-9") {
     newData.sort((a, b) => {
@@ -54,10 +42,34 @@ const filterByNum = (data, valor) => {
   return newData;
 };
 
+//* filtro por tipo *//
+const filterByType = (data, valor) => {
+  /* definindo os parâmetros */
+  const filterPkmnByType = data.filter(
+    /* abrindo uma const para receber o filtro */
+    (pokemon) =>
+      pokemon.type.indexOf(valor.toLowerCase()) >
+      -1 /* buscando valor que queremos pelo indexOf */
+  );
+  return filterPkmnByType;
+};
+
 const searchByName = (pokemon, name) => {
   return pokemon.filter((pokemon) => {
     return pokemon.name.toLowerCase().includes(name.toLowerCase());
   });
 };
 
-export { filterByName, filterByNum, filterByType, searchByName };
+function percentageCalculation(filtered, all) {
+  const percentageType = (filtered * 100) / all;
+  const formattedPercentage = percentageType.toFixed(0);
+  return formattedPercentage;
+}
+
+export {
+  sortByName,
+  sortByNum,
+  filterByType,
+  searchByName,
+  percentageCalculation,
+};

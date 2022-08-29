@@ -1,8 +1,9 @@
 import {
-  filterByName,
-  filterByNum,
+  sortByName,
+  sortByNum,
   filterByType,
   searchByName,
+  percentageCalculation,
 } from "../src/data.js";
 
 const pokemonsName = [
@@ -17,16 +18,16 @@ const pokemonsName = [
   },
 ];
 
-describe("filterByName", function () {
+describe("sortByName", function () {
   it("deve ordernar de a-z", function () {
-    const sortedName = filterByName(pokemonsName, "A-Z");
+    const sortedName = sortByName(pokemonsName, "A-Z");
 
     expect(sortedName.length).toEqual(pokemonsName.length);
     expect(sortedName[0].name).toEqual(pokemonsName[1].name);
   });
 
   it("deve ordernar de z-a", function () {
-    const sortedName = filterByName(pokemonsName, "Z-A");
+    const sortedName = sortByName(pokemonsName, "Z-A");
 
     expect(sortedName.length).toEqual(pokemonsName.length);
     expect(sortedName[0].name).toEqual(pokemonsName[2].name);
@@ -48,16 +49,16 @@ const pokemonsNum = [
   },
 ];
 
-describe("filterByNum", function () {
+describe("sortByNum", function () {
   it("deve ordernar de 0-9", function () {
-    const sortedNum = filterByNum(pokemonsNum, "0-9");
+    const sortedNum = sortByNum(pokemonsNum, "0-9");
 
     expect(sortedNum.length).toEqual(pokemonsNum.length);
     expect(sortedNum[0].num).toEqual(pokemonsNum[0].num);
   });
 
   it("deve ordernar de 9-0", function () {
-    const sortedNum = filterByNum(pokemonsNum, "9-0");
+    const sortedNum = sortByNum(pokemonsNum, "9-0");
 
     expect(sortedNum.length).toEqual(pokemonsNum.length);
     expect(sortedNum[0].num).toEqual(pokemonsNum[1].num);
@@ -83,19 +84,19 @@ const pokemonsType = [
 ];
 
 describe("filterByType", function () {
-  it("deve filtrar o tipo definido", function () {
+  it("deve filtrar o tipo psychic", function () {
     const sortedType = filterByType(pokemonsType, "psychic");
 
     expect(sortedType[0].type).toEqual(pokemonsType[1].type);
   });
 
-  it("deve filtrar o tipo definido", function () {
+  it("deve filtrar o tipo poison", function () {
     const sortedType = filterByType(pokemonsType, "poison");
 
     expect(sortedType[1].type).toEqual(pokemonsType[2].type);
   });
 
-  it("deve filtrar o tipo definido", function () {
+  it("deve filtrar o tipo flying", function () {
     const sortedType = filterByType(pokemonsType, "flying");
 
     expect(sortedType[0].type).toEqual(pokemonsType[2].type);
@@ -115,15 +116,29 @@ const pokemonsSearch = [
 ];
 
 describe("searchByName", function () {
-  it("deve retornar o pokémon buscado", function () {
+  it("deve retornar o pokémon zubat", function () {
     const sortedSearch = searchByName(pokemonsSearch, "zubat");
 
     expect(sortedSearch[0].type).toEqual(pokemonsSearch[2].type);
   });
 
-  it("deve retornar o pokémon buscado", function () {
+  it("deve retornar o pokémon abra", function () {
     const sortedSearch = searchByName(pokemonsSearch, "abra");
 
     expect(sortedSearch[0].type).toEqual(pokemonsSearch[1].type);
+  });
+});
+
+describe("percentageCalculation", function () {
+  it("deve calcular quantos % 50 pertence a 100", function () {
+    const percentageValue = percentageCalculation(50, 100);
+
+    expect(percentageValue).toEqual("50");
+  });
+
+  it("deve calcular quantos % 20 pertence a 251", function () {
+    const percentageValue = percentageCalculation(20, 251);
+
+    expect(percentageValue).toEqual("8");
   });
 });

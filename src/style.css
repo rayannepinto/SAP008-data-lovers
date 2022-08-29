@@ -87,7 +87,21 @@ header {
   background-color: #e28f3c;
 }
 
-.nav-order-filter {
+.type-percentage-card {
+  background-color: #000;
+  color: #ffffff;
+  width: 82vw;
+  height: max-content;
+  margin-bottom: 4rem;
+  border-radius: 8px;
+  font-family: "Familjen Grotesk", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3rem;
+  display: none;
+}
+
+.nav-sort-filter {
   background-color: #ffcc03;
   height: max-content;
   width: 82vw;
@@ -97,7 +111,7 @@ header {
   justify-content: center;
 }
 
-.btn-order {
+.btn-nav {
   width: 20vw;
   max-width: 150px;
   margin: 20px;
@@ -109,27 +123,27 @@ header {
   box-shadow: 2px 2px 5px rgb(63, 35, 35);
 }
 
-.name-order {
+.sort-name {
   background: #5ab2d8;
 }
 
-.name-order:hover {
+.sort-name:hover {
   background: #5dc5ee;
 }
 
-.num-order {
+.sort-num {
   background: #db6154;
 }
 
-.num-order:hover {
+.sort-num:hover {
   background: #fa7d6f;
 }
 
-.type-order {
+.type-filter {
   background: #14b534;
 }
 
-.type-order:hover {
+.type-filter:hover {
   background: #23ca44;
 }
 
@@ -265,7 +279,7 @@ header {
   display: none;
 }
 
-.modal-content {
+.modal-card {
   margin: 0 auto;
   margin-top: 7%;
   width: 450px;
@@ -383,7 +397,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .modal-content {
+  .modal-card {
     width: 550px;
     height: 600px;
   }
@@ -396,7 +410,7 @@ header {
     width: 60vw;
   }
 
-  .nav-order-filter {
+  .nav-sort-filter {
     width: 60vw;
   }
 
@@ -428,7 +442,7 @@ header {
     width: 50vw;
   }
 
-  .nav-order-filter {
+  .nav-sort-filter {
     width: 50vw;
   }
 

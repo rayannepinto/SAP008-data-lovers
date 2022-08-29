@@ -1,8 +1,9 @@
 import {
   filterByType,
-  filterByName,
-  filterByNum,
+  sortByName,
+  sortByNum,
   searchByName,
+  percentageCalculation,
 } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 //* let para termos o datalist dos Pokémons *//
@@ -39,20 +40,19 @@ function pokemonList(pokemons) {
     scrollCard.appendChild(card);
   });
 }
-
 pokemonList(pkmnDataList);
 
 /* Acionando os filtros */
-const alphabeticOrdenation = document.getElementById("nameOrder");
-const numberAscDescOrdenation = document.getElementById("numOrder");
-const typeFilter = document.getElementById("typeOrder");
+const alphabeticOrdenation = document.getElementById("sortName");
+const numberAscDescOrdenation = document.getElementById("sortNum");
+const typeFilter = document.getElementById("typeFilter");
 
 alphabeticOrdenation.addEventListener("change", function () {
   let sortedPokemons = [];
   if (alphabeticOrdenation.value == "A-Z") {
-    sortedPokemons = filterByName(pkmnDataList, "A-Z");
+    sortedPokemons = sortByName(pkmnDataList, "A-Z");
   } else {
-    sortedPokemons = filterByName(pkmnDataList, "Z-A");
+    sortedPokemons = sortByName(pkmnDataList, "Z-A");
   }
   pokemonList(sortedPokemons);
 });
@@ -60,19 +60,34 @@ alphabeticOrdenation.addEventListener("change", function () {
 numberAscDescOrdenation.addEventListener("change", function () {
   let sortedPokemons = [];
   if (numberAscDescOrdenation.value == "0-9") {
-    sortedPokemons = filterByNum(pkmnDataList, "0-9");
+    sortedPokemons = sortByNum(pkmnDataList, "0-9");
   } else {
-    sortedPokemons = filterByNum(pkmnDataList, "9-0");
+    sortedPokemons = sortByNum(pkmnDataList, "9-0");
   }
   pokemonList(sortedPokemons);
 });
 
 typeFilter.addEventListener("change", function () {
   pkmnDataList = data.pokemon;
+
+  const typePercentage = document.getElementById("typePercentageCard");
+
+  let filteredPokemons = [];
   if (typeFilter.value != "all") {
-    pkmnDataList = filterByType(pkmnDataList, typeFilter.value);
+    filteredPokemons = filterByType(pkmnDataList, typeFilter.value);
+
+    const percentageValue = percentageCalculation(
+      filteredPokemons.length,
+      pkmnDataList.length
+    );
+
+    typePercentage.style.display = "block";
+    typePercentage.innerHTML = `O tipo ${typeFilter.value} representa ${percentageValue}% dos pokémons da primeira e segunda geração!`;
+  } else {
+    typePercentage.style.display = "none";
+    filteredPokemons = pkmnDataList;
   }
-  pokemonList(pkmnDataList);
+  pokemonList(filteredPokemons);
 });
 
 document
@@ -86,6 +101,7 @@ function searchName(evento) {
 }
 
 const clearButton = document.getElementById("cleanButton");
+
 function cleanInput() {
   FormData.reset();
 }
@@ -100,26 +116,24 @@ function openModal(pokemon) {
   }
 
   let typesPkmn = "";
+  let resistantPkmn = "";
+  let weaknessesPkmn = "";
 
   pokemon.type.forEach((type) => {
     typesPkmn += `<p class="type-style ${type}">${type}</p>`;
   });
 
-  let resistantPkmn = "";
-
   pokemon.resistant.forEach((resistant) => {
     resistantPkmn += `<p class="type-style ${resistant}">${resistant}</p>`;
   });
-
-  let weaknessesPkmn = "";
 
   pokemon.weaknesses.forEach((weaknesses) => {
     weaknessesPkmn += `<p class="type-style ${weaknesses}">${weaknesses}</p>`;
   });
 
-  const modalBody = document.getElementById("modalBody");
+  const modalContent = document.getElementById("modalContent");
 
-  modalBody.innerHTML = `
+  modalContent.innerHTML = `
     <div class="modal-body">
       <div class="card-modal">
         <img src=${pokemon.img} alt="Foto pokémon">
@@ -134,10 +148,10 @@ function openModal(pokemon) {
         <p>Ataque: ${pokemon.stats["base-attack"]}</p>
         <p>Defesa: ${pokemon.stats["base-defense"]}</p>
         <p>Energia: ${pokemon.stats["base-stamina"]}</p>
-        <p>HP: ${pokemon.stats["max-hp"]}</p>
+        <p>HP: ${pokemon.stats["max-hp"]}</p> <br>
       </div>
     </div>
-
+     
     <div class="modal-types"> 
       <p class="modal-types-title">Resistências:</p>
       <div class="modal-types-display">${resistantPkmn}</div>
@@ -146,7 +160,7 @@ function openModal(pokemon) {
     <div class="modal-types"> 
       <p class="modal-types-title">Fraquezas:</p>
       <div class="modal-types-display">${weaknessesPkmn}</div>
-    </div>    
+    </div>
   `;
 
   modal.style.display = "block";
