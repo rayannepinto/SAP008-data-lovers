@@ -494,7 +494,7 @@ header {
   }
 
   .nav-sort-filter {
-    width: 50vw;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     height: max-content;
@@ -513,28 +513,58 @@ header {
 }
 
 @media all and (max-width: 567px) {
-  .clean-name-button {
-    font-size: 0.48rem;
-  }
-
-  .card {
-    width: 7rem;
-    height: 12rem;
-  }
-
-  .number-style {
-    font-size: 0.8rem;
-  }
+  @media all and (max-width: 900px) {
+    .card-main-pokemon {
+      padding: 0rem;
+      margin: 0rem;
+      width: 95vw;
+    }
   
-  .name-style {
-    font-size: 0.8rem;
-  }
+    .nav-sort-filter {
+      width: 95vw;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly
+    }
   
-  .type-style {
-    font-size: 0.8rem;
-  }
-
-  .footer {
-    font-size: 0.7rem;
-  }
+    .card-scroll {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .card-main-display {
+      display: grid;
+      justify-content: center;
+      width: 95vw;
+      align-items: center;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  
+    .input-search {
+      width: 300px;
+      height: 30px;
+      justify-content: center;
+    }
+  
+    .card {
+      width: 9rem;
+      height: 12rem;
+    }
+  
+    .type-style {
+      width: 90px;
+      font-size: 15px;
+    }
+  
+    .name-style{
+      font-size: 15px;
+    }
+  
+    .clean-name-button {
+      width: 80px;
+      height: 30px;
+      font-size: 15px;  
+    }
+}
 }
