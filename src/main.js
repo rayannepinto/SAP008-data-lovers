@@ -140,7 +140,7 @@ function openModal(pokemon) {
         <p class="number-style">${pokemon.num}</p>
         <p class="name-style">${pokemon.name}</p>    
         <div class="type-teste">${typesPkmn}</div>
-      </div> 
+      </div>
 
       <div class="modal-stats">
         <p class="modal-height">Altura: ${pokemon.size.height}</p>

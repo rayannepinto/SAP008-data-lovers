@@ -20,22 +20,17 @@ const sortByNum = (data, valor) => {
       if (a.num > b.num) {
         /* Se compare(a, b) for maior que zero, o método sort() classificará b com um índice menor que a, ou seja, b virá primeiro.*/
         return 1;
-      } else if (a.num < b.num) {
+      } else {
         /* e compare(a, b) for menor que zero, o método sort() classifica a para um índice menor que b. Ou seja, o a virá antes de b.*/
         return -1;
-      } else if (a.num === b.num) {
-        /* Se compare(a, b) retornar zero, o método sort() considera a igual a b e deixa suas posições inalteradas. */
-        return 0;
       }
     });
   } else {
     newData.sort((a, b) => {
       if (a.num < b.num) {
         return 1;
-      } else if (a.num > b.num) {
+      } else {
         return -1;
-      } else if (a.num === b.num) {
-        return 0;
       }
     });
   }
