@@ -87,6 +87,20 @@ header {
   background-color: #e28f3c;
 }
 
+.type-percentage-card {
+  background-color: #000;
+  color: #ffffff;
+  width: 82vw;
+  height: max-content;
+  margin-bottom: 4rem;
+  border-radius: 8px;
+  font-family: "Familjen Grotesk", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3rem;
+  display: none;
+}
+
 .nav-sort-filter {
   background-color: #ffcc03;
   height: max-content;
@@ -265,7 +279,7 @@ header {
   display: none;
 }
 
-.modal-content {
+.modal-card {
   margin: 0 auto;
   margin-top: 7%;
   width: 450px;
@@ -383,7 +397,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .modal-content {
+  .modal-card {
     width: 550px;
     height: 600px;
   }

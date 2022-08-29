@@ -1,4 +1,10 @@
-import { filterByType, sortByName, sortByNum, searchByName } from "./data.js";
+import {
+  filterByType,
+  sortByName,
+  sortByNum,
+  searchByName,
+  percentageCalculation,
+} from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 //* let para termos o datalist dos Pokémons *//
 let pkmnDataList = data.pokemon;
@@ -34,7 +40,6 @@ function pokemonList(pokemons) {
     scrollCard.appendChild(card);
   });
 }
-
 pokemonList(pkmnDataList);
 
 /* Acionando os filtros */
@@ -64,10 +69,25 @@ numberAscDescOrdenation.addEventListener("change", function () {
 
 typeFilter.addEventListener("change", function () {
   pkmnDataList = data.pokemon;
+
+  const typePercentage = document.getElementById("typePercentageCard");
+
+  let filteredPokemons = [];
   if (typeFilter.value != "all") {
-    pkmnDataList = filterByType(pkmnDataList, typeFilter.value);
+    filteredPokemons = filterByType(pkmnDataList, typeFilter.value);
+
+    const percentageValue = percentageCalculation(
+      filteredPokemons.length,
+      pkmnDataList.length
+    );
+
+    typePercentage.style.display = "block";
+    typePercentage.innerHTML = `O tipo ${typeFilter.value} representa ${percentageValue}% dos pokémons da primeira e segunda geração!`;
+  } else {
+    typePercentage.style.display = "none";
+    filteredPokemons = pkmnDataList;
   }
-  pokemonList(pkmnDataList);
+  pokemonList(filteredPokemons);
 });
 
 document
@@ -111,21 +131,9 @@ function openModal(pokemon) {
     weaknessesPkmn += `<p class="type-style ${weaknesses}">${weaknesses}</p>`;
   });
 
-  const arrayTypeOne = filterByType(pkmnDataList, pokemon.type[0]);
-  const percentTypeOne = (arrayTypeOne.length * 100) / pkmnDataList.length;
+  const modalContent = document.getElementById("modalContent");
 
-  let typeTwoParagraph = "";
-
-  if (pokemon.type.length == 2) {
-    const arrayTypeTwo = filterByType(pkmnDataList, pokemon.type[1]);
-    const percentTypeTwo = (arrayTypeTwo.length * 100) / pkmnDataList.length;
-
-    typeTwoParagraph = `<p>Cálculo: ${percentTypeTwo}%</p>`;
-  }
-
-  const modalBody = document.getElementById("modalBody");
-
-  modalBody.innerHTML = `
+  modalContent.innerHTML = `
     <div class="modal-body">
       <div class="card-modal">
         <img src=${pokemon.img} alt="Foto pokémon">
@@ -144,9 +152,6 @@ function openModal(pokemon) {
       </div>
     </div>
      
-    <p>Cálculo: ${percentTypeOne}%</p> 
-    ${typeTwoParagraph}
-
     <div class="modal-types"> 
       <p class="modal-types-title">Resistências:</p>
       <div class="modal-types-display">${resistantPkmn}</div>

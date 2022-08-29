@@ -3,6 +3,7 @@ import {
   sortByNum,
   filterByType,
   searchByName,
+  percentageCalculation,
 } from "../src/data.js";
 
 const pokemonsName = [
@@ -83,19 +84,19 @@ const pokemonsType = [
 ];
 
 describe("filterByType", function () {
-  it("deve filtrar o tipo definido", function () {
+  it("deve filtrar o tipo psychic", function () {
     const sortedType = filterByType(pokemonsType, "psychic");
 
     expect(sortedType[0].type).toEqual(pokemonsType[1].type);
   });
 
-  it("deve filtrar o tipo definido", function () {
+  it("deve filtrar o tipo poison", function () {
     const sortedType = filterByType(pokemonsType, "poison");
 
     expect(sortedType[1].type).toEqual(pokemonsType[2].type);
   });
 
-  it("deve filtrar o tipo definido", function () {
+  it("deve filtrar o tipo flying", function () {
     const sortedType = filterByType(pokemonsType, "flying");
 
     expect(sortedType[0].type).toEqual(pokemonsType[2].type);
@@ -115,15 +116,29 @@ const pokemonsSearch = [
 ];
 
 describe("searchByName", function () {
-  it("deve retornar o pokémon buscado", function () {
+  it("deve retornar o pokémon zubat", function () {
     const sortedSearch = searchByName(pokemonsSearch, "zubat");
 
     expect(sortedSearch[0].type).toEqual(pokemonsSearch[2].type);
   });
 
-  it("deve retornar o pokémon buscado", function () {
+  it("deve retornar o pokémon abra", function () {
     const sortedSearch = searchByName(pokemonsSearch, "abra");
 
     expect(sortedSearch[0].type).toEqual(pokemonsSearch[1].type);
+  });
+});
+
+describe("percentageCalculation", function () {
+  it("deve calcular quantos % 50 pertence a 100", function () {
+    const percentageValue = percentageCalculation(50, 100);
+
+    expect(percentageValue).toEqual("50");
+  });
+
+  it("deve calcular quantos % 20 pertence a 251", function () {
+    const percentageValue = percentageCalculation(20, 251);
+
+    expect(percentageValue).toEqual("8");
   });
 });

@@ -60,4 +60,16 @@ const searchByName = (pokemon, name) => {
   });
 };
 
-export { sortByName, sortByNum, filterByType, searchByName };
+function percentageCalculation(filtered, all) {
+  const percentageType = (filtered * 100) / all;
+  const formattedPercentage = percentageType.toFixed(0);
+  return formattedPercentage;
+}
+
+export {
+  sortByName,
+  sortByNum,
+  filterByType,
+  searchByName,
+  percentageCalculation,
+};
