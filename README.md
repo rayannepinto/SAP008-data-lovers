@@ -40,11 +40,11 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 ### 3.3 O usuário gostaria de fazer a busca através de um filtro específico. ###
 * Ele poderá escolher a visibilidade através dos filtros de nome **(A-Z)** ou **(Z-A)**, de número **(0-9)** ou **(9-0)** e através dos **dezoito tipos** de Pokémons.
 
-## 4. Protótipo de Baixa Qualidade ##
+## 4. Protótipo de Baixa Fidelidade ##
 
 ![Protótipo de Baixa Qualidade](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/baixaqualidade.jpg)
 
-## 5. Protótipo de Alta Qualidade ##
+## 5. Protótipo de Alta Fidelidade ##
 
 ![foto do protótipo1](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/prototipo1.png)
 ![foto do protótipo2](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/prototipo2.png)
