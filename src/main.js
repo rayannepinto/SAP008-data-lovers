@@ -5,6 +5,7 @@ import {
   searchByName,
   percentageCalculation,
 } from "./data.js";
+
 import data from "./data/pokemon/pokemon.js";
 //* let para termos o datalist dos Pokémons *//
 let pkmnDataList = data.pokemon;

@@ -99,6 +99,7 @@ header {
   text-align: center;
   padding: 0.3rem;
   display: none;
+  font-size: 1.2rem;
 }
 
 .nav-sort-filter {
@@ -149,7 +150,6 @@ header {
 
 .card-scroll {
   width: 100%;
-  height: auto;
   background-color: #e6d69a;
   overflow: auto;
   display: grid;
@@ -283,7 +283,7 @@ header {
   margin: 0 auto;
   margin-top: 7%;
   width: 450px;
-  height: 500px;
+  height: 550px;
   background-color: #e5d69a;
   padding: 0px;
   box-shadow: 0 0 2px #fff;
@@ -374,121 +374,307 @@ header {
 
   .card-scroll {
     grid-template-columns: repeat(5, 1fr);
+    height: 700px;
   }
 }
 
-@media all and (max-width: 1350px) {
-  * {
+@media all and (max-width: 1312px) {
+  .card-main-pokemon {
+    padding: 0rem;
+    height: 50rem;
+  }
+
+  .card-scroll {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .modal-card {
+    width: 450px;
+    height: 550px;
+  }
+}
+
+@media all and (max-width: 1059px) {
+  .logo {
+    width: 20rem;
+  }
+
+  .input-search {
+    font-size: 1rem;
+    width: 400px;
+    height: 45px;
+  }
+
+  .clean-name-button {
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .type-percentage-card {
+    font-size: 1.6rem;
+  }
+
+  .nav-sort-filter {
+    width: 850px;
+    font-size: 5rem;
+  }
+
+  .card-main-pokemon {
+    height: 1050px;
+  }
+
+  .card-scroll {
+    grid-template-columns: repeat(3, 1fr);
+    width: 850px;
+  }
+
+  .card {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  #sortName {
+    font-size: 1rem;
+  }
+
+  #sortNum {
+    font-size: 1rem;
+  }
+
+  #typeFilter {
+    font-size: 1rem;
+  }
+
+  .number-style {
+    font-size: 1rem;
+  }
+
+  .name-style {
+    font-size: 1rem;
+  }
+
+  .type-style {
+    font-size: 1rem;
+    width: 7rem;
+  }
+
+  .modal-card {
+    width: 500px;
+    height: max-content;
+    margin-top: 10rem;
+  }
+
+  .card-modal {
+    background-color: #e9dcdc;
+    border: 5px solid #2485af;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
+    padding-bottom: 1rem;
+    width: 12rem;
+    height: 14.5rem;
+    text-align: center;
+  }
+
+  .modal-stats {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  .modal-types {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    text-align: center;
+    width: 20rem;
+  }
+
+  .modal-types-title {
     font-size: 20px;
   }
 
-  .card-main-display {
+  .btn-close {
+    padding-left: 95%;
+    padding-top: 3%;
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .input-search {
+    font-size: 1.2rem;
+  }
+
+  .clean-name-button {
+    font-size: 1.2rem;
+    align-items: center;
+  }
+
+  .card-scroll {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+  }
+
+  .nav-sort-filter {
+    width: 95%;
+  }
+
+  .card {
+    width: 20rem;
+    height: 18rem;
+    margin: 1rem auto 1rem auto;
+  }
+
+  #sortName {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  #sortNum {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  #typeFilter {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .number-style {
+    font-size: 1.5rem;
+  }
+
+  .name-style {
+    font-size: 1.5rem;
+  }
+
+  .type-style {
+    font-size: 1.5rem;
+    width: 10rem;
+  }
+
+  .modal-card {
+    width: 600px;
+    height: 680px;
+    margin-top: 5rem;
+  }
+
+  .card-modal {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 15rem;
+    height: 18rem;
+  }
+
+  .modal-stats {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 23px;
+  }
+
+  .modal-types {
+    margin-left: 40px;
+  }
+
+  .modal-types-title {
+    font-size: 23px;
+  }
+}
+
+@media all and (max-width: 940px) {
+  .logo {
+    width: 15rem;
+  }
+
+  .card-main-pokemon {
+    align-items: center;
+  }
+
+  .card-scroll {
+    grid-template-columns: repeat(1, 1fr);
+    width: 400px;
+  }
+
+  .nav-sort-filter {
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .card-main-pokemon {
-    padding: 0rem;
-    height: 44rem;
-  }
-
-  .card-scroll {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .modal-card {
-    width: 550px;
-    height: 600px;
-  }
-}
-
-@media all and (max-width: 1017px) {
-  .card-main-pokemon {
-    padding: 0rem;
-    margin: 0rem;
-    width: 95vw;
-  }
-
-  .nav-sort-filter {
-    width: 95vw;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .card-scroll {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .card-main-display {
-    display: grid;
-    justify-content: center;
-    width: 95vw;
-    align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .input-search {
-    width: 300px;
-    height: 30px;
-    justify-content: center;
+  .btn-nav {
+    margin: 10px;
+    width: 100%;
   }
 
   .card {
-    width: 9rem;
-    height: 12rem;
+    width: 18rem;
+    height: 16rem;
   }
 
-  .type-style {
-    width: 90px;
-    font-size: 15px;
+  #sortName {
+    font-size: 1.2rem;
+  }
+
+  #sortNum {
+    font-size: 1.2rem;
+  }
+
+  #typeFilter {
+    font-size: 1.2rem;
+  }
+
+  .number-style {
+    font-size: 1.2rem;
   }
 
   .name-style {
-    font-size: 15px;
+    font-size: 1.2rem;
   }
 
-  .clean-name-button {
-    width: 80px;
-    height: 30px;
-    font-size: 15px;
-  }
-}
-
-@media all and (max-width: 845px) {
-  .logo {
-    width: 12rem;
-  }
-  .input-search {
-    font-size: 0.7rem;
-  }
-
-  .card-scroll {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card-modal {
-    width: 10rem;
-    height: 12rem;
+  .type-style {
+    font-size: 1.2rem;
+    width: 7rem;
   }
 
   .modal-card {
-    width: 480px;
-    height: 550px;
+    width: 435px;
+    height: 600px;
+    margin-top: 5rem;
   }
 
-  .footer {
-    font-size: 0.8rem;
+  .card-modal {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 12rem;
+    height: 16rem;
   }
-}
 
-@media all and (max-width: 567px) {
-  @media all and (max-width: 900px) {
-    .card-scroll {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .modal-stats {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+
+  .modal-types {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    text-align: center;
+    width: 20rem;
+  }
+
+  .modal-types-title {
+    font-size: 20px;
+  }
+
+  .btn-close {
+    font-size: 1.2rem;
   }
 }
