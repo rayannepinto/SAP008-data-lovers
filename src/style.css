@@ -592,6 +592,10 @@ header {
     width: 15rem;
   }
 
+  .input-search {
+    width: max-content;
+  }
+
   .card-main-pokemon {
     align-items: center;
   }
