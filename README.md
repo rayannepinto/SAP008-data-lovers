@@ -56,7 +56,7 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 
 ## 6. Resultado do Projeto ##
 
-*gif com os resultados*
+![gif mobile](https://github.com/ncrigo/SAP008-data-lovers/blob/d91f98c7e0eb7c883b03473d57651e8ad063e86d/src/img/gifmobile.gif) ![gif desk](https://github.com/ncrigo/SAP008-data-lovers/blob/d91f98c7e0eb7c883b03473d57651e8ad063e86d/src/img/gifwebdesk.gif)
 
 ## 7. Tecnologias Utilizadas ##
 
