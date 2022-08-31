@@ -1,6 +1,6 @@
 # Data Lovers - PokéInfo 🔍 #
 
-![logo do projeto](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/logo.png)
+![logo do projeto](https://github.com/ncrigo/SAP008-data-lovers/blob/7bdadabdc7da4eeba964f2337e5cef545e944432/src/img/logo.png)
 
 ## Índice
 
