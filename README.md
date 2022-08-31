@@ -1,4 +1,4 @@
-# Data Lovers - PokéInfo 🔍 #
+# Data Lovers - PokéData 🔍 #
 
 ![logo do projeto](https://github.com/ncrigo/SAP008-data-lovers/blob/7bdadabdc7da4eeba964f2337e5cef545e944432/src/img/logo.png)
 
