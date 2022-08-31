@@ -22,7 +22,7 @@
 
 ## 1. Resumo do Projeto
 
-Com a **PokéInfo**, o usuário poderá navegar de forma rápida e intuitiva para conseguir capturar as informações que precisa sobre seus Pokémons favoritos. 
+Com a **PokéData**, o usuário poderá navegar de forma rápida e intuitiva para conseguir capturar as informações que precisa sobre seus Pokémons favoritos. 
 
 ## 2. O Usuário 
 
