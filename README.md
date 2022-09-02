@@ -46,7 +46,7 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 
 ## 5. Protótipo de Alta Fidelidade ##
 
-![foto do protótipo1](https://github.com/ncrigo/SAP008-data-lovers/blob/2062d3d919f1a20564df2bde303378a1fba1f418/src/img/screen1.png)
+![foto do protótipo1](https://github.com/ncrigo/SAP008-data-lovers/blob/f48b5de7140b237ec2431a093c31802a0bded300/src/img/screen1.png)
 ![foto do protótipo2](https://github.com/ncrigo/SAP008-data-lovers/blob/2062d3d919f1a20564df2bde303378a1fba1f418/src/img/screen2.png)
 ![foto do protótipo3](https://github.com/ncrigo/SAP008-data-lovers/blob/2062d3d919f1a20564df2bde303378a1fba1f418/src/img/screen3.png)
 
