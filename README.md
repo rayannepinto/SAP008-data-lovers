@@ -26,7 +26,7 @@ Com a **PokéData**, o usuário poderá navegar de forma rápida e intuitiva par
 
 ## 2. O Usuário 
 
-Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas situações, tais dados mostram-se confusos. Por isso, decidimos criar um web aplicativo que permite ao usuário, de **forma sucinta**, pesquisar sobre os dados mais relevante de seus personagens. Sendo assim, fizemos cards que mostram algumas informações e também um modal com outras.
+Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas situações, tais dados mostram-se confusos. Por isso, decidimos criar um web aplicativo que permite ao usuário, de **forma sucinta**, pesquisar sobre os dados mais relevantes de seus personagens. Sendo assim, fizemos cards que mostram algumas informações e também um modal com outras.
 
 
 ## 3. Histórias dos Usuários
