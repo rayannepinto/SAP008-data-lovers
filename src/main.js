@@ -7,10 +7,9 @@ import {
 } from "./data.js";
 
 import data from "./data/pokemon/pokemon.js";
-//* let para termos o datalist dos Pokémons *//
+
 let pkmnDataList = data.pokemon;
 
-/* Aparecer os pokemons no card */
 const scrollCard = document.getElementById("cardScroll");
 
 function pokemonList(pokemons) {
@@ -43,7 +42,6 @@ function pokemonList(pokemons) {
 }
 pokemonList(pkmnDataList);
 
-/* Acionando os filtros */
 const alphabeticOrdenation = document.getElementById("sortName");
 const numberAscDescOrdenation = document.getElementById("sortNum");
 const typeFilter = document.getElementById("typeFilter");
@@ -108,7 +106,6 @@ function cleanInput() {
 }
 clearButton.addEventListener("click", cleanInput);
 
-/*Modal*/
 function openModal(pokemon) {
   const modal = document.getElementById("modalKnowMore");
 
