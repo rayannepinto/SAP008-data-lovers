@@ -43,7 +43,7 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 ## 4. Protótipo de Baixa Fidelidade ##
 
 ![Protótipo de Baixa Qualidade](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/baixaqualidade.jpg)
-OBS: Inicialmente, pensamos em criar uma interface que gerasse um time de Pokémons com os tipos selecionados pelo usuário. Contudo, no decorrer do projeto, tivemos que alterar a ideia inicial para conseguir atingir os objetivos e entregá-lo no tempo estimado.
+OBS: Inicialmente, pensamos em criar uma interface que gerasse um time ideal de Pokémons com base nas fraquezas dos pokémons selecionados pelo usuário. Contudo, no decorrer do projeto, tivemos que alterar a ideia inicial para conseguir atingir os objetivos e entregá-lo no tempo estimado.
 
 ## 5. Protótipo de Alta Fidelidade ##
 
