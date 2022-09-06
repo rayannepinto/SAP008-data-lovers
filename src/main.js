@@ -26,10 +26,10 @@ function pokemonList(pokemons) {
 
     card.innerHTML = `
     <div class="card">
-    <img src=${pokemon.img} alt="Foto pokémon">
-    <p class="number-style">${pokemon.num}</p>
-    <p class="name-style">${pokemon.name}</p>    
-    <div class="type-teste">${typesPkmn}</div>
+      <img src=${pokemon.img} alt="Foto pokémon">
+      <p class="number-style">${pokemon.num}</p>
+      <p class="name-style">${pokemon.name}</p>    
+      <div class="type-teste">${typesPkmn}</div>
     </div>
     `;
 
@@ -40,6 +40,7 @@ function pokemonList(pokemons) {
     scrollCard.appendChild(card);
   });
 }
+
 pokemonList(pkmnDataList);
 
 const alphabeticOrdenation = document.getElementById("sortName");
@@ -67,8 +68,6 @@ numberAscDescOrdenation.addEventListener("change", function () {
 });
 
 typeFilter.addEventListener("change", function () {
-  pkmnDataList = data.pokemon;
-
   const typePercentage = document.getElementById("typePercentageCard");
 
   let filteredPokemons = [];
@@ -95,7 +94,7 @@ document
 
 function searchName(evento) {
   const name = evento.target.value;
-  const result = searchByName(data.pokemon, name);
+  const result = searchByName(pkmnDataList, name);
   pokemonList(result);
 }
 
@@ -104,14 +103,11 @@ const clearButton = document.getElementById("cleanButton");
 function cleanInput() {
   FormData.reset();
 }
+
 clearButton.addEventListener("click", cleanInput);
 
 function openModal(pokemon) {
   const modal = document.getElementById("modalKnowMore");
-
-  if (typeof modal == "undefined" || modal === null) {
-    return;
-  }
 
   let typesPkmn = "";
   let resistantPkmn = "";
@@ -170,10 +166,6 @@ button.addEventListener("click", closeModal);
 
 function closeModal() {
   const modal = document.getElementById("modalKnowMore");
-
-  if (typeof modal == "undefined" || modal === null) {
-    return;
-  }
 
   modal.style.display = "none";
   document.body.style.overflow = "auto";
