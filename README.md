@@ -49,7 +49,7 @@ OBS: Inicialmente, pensamos em criar uma interface que gerasse um time ideal de 
 
 ![foto do protótipo1](https://github.com/ncrigo/SAP008-data-lovers/blob/0d4a22f81c871945a62aa5e0d1b73102a69e8389/src/img/screen1.png)
 ![foto do protótipo2](https://github.com/ncrigo/SAP008-data-lovers/blob/0d4a22f81c871945a62aa5e0d1b73102a69e8389/src/img/screen2.png)
-![foto do protótipo3](https://github.com/ncrigo/SAP008-data-lovers/blob/0d4a22f81c871945a62aa5e0d1b73102a69e8389/src/img/screen3.png)
+![foto do protótipo3](https://github.com/ncrigo/SAP008-data-lovers/blob/d9d32c03660dca61a517e0a75bf470dcd8e8de64/src/img/screen3.png)
 
 ### 5.1 Paleta de Cores
 
