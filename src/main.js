@@ -157,7 +157,10 @@ function openModal(pokemon) {
     </div>
   `;
 
+  const footer = document.getElementById("footerText");
+
   modal.style.display = "block";
+  footer.style.display = "none";
   document.body.style.overflow = "hidden";
 }
 
@@ -167,6 +170,9 @@ button.addEventListener("click", closeModal);
 function closeModal() {
   const modal = document.getElementById("modalKnowMore");
 
+  const footer = document.getElementById("footerText");
+
   modal.style.display = "none";
+  footer.style.display = "block";
   document.body.style.overflow = "auto";
 }
