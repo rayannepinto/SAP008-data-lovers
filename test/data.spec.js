@@ -130,13 +130,13 @@ describe("searchByName", function () {
 });
 
 describe("percentageCalculation", function () {
-  it("deve calcular quantos % 50 pertence a 100", function () {
+  it("deve calcular o valor em % de 50 em 100 pokémons", function () {
     const percentageValue = percentageCalculation(50, 100);
 
     expect(percentageValue).toEqual("50");
   });
 
-  it("deve calcular quantos % 20 pertence a 251", function () {
+  it("deve calcular o valor em % de 20 em 251 pokémons", function () {
     const percentageValue = percentageCalculation(20, 251);
 
     expect(percentageValue).toEqual("8");
