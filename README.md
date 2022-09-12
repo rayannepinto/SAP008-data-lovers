@@ -26,7 +26,7 @@ Com a **PokéData**, o usuário poderá navegar de forma rápida e intuitiva par
 
 ## 2. O Usuário 
 
-Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas situações, tais dados mostram-se confusos. Por isso, decidimos criar um web aplicativo que permite ao usuário, de **forma sucinta**, pesquisar sobre os dados mais relevantes de seus personagens. Sendo assim, fizemos cards que mostram algumas informações e também um modal com outras.
+Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas situações, tais dados mostram-se confusos. Por isso, decidimos criar um web aplicativo que permite ao usuário, de **forma sucinta**, pesquisar sobre os dados mais relevantes de seus personagens. Sendo assim, fizemos cards que mostram informações iniciais e também um modal com informações complementares.
 
 
 ## 3. Histórias dos Usuários
@@ -43,7 +43,7 @@ Com a enorme gama de dados dispersos na inter-web, percebe-se que, em algumas si
 ## 4. Protótipo de Baixa Fidelidade ##
 
 ![Protótipo de Baixa Qualidade](https://github.com/ncrigo/SAP008-data-lovers/blob/0e445889993aed1d22b2dde002cdf38fd72070d4/src/img/baixaqualidade.jpg)
-OBS: Inicialmente, pensamos em criar uma interface que gerasse um time ideal de Pokémons com base nas fraquezas dos pokémons selecionados pelo usuário. Contudo, no decorrer do projeto, tivemos que alterar a ideia inicial para conseguir atingir os objetivos e entregá-lo no tempo estimado.
+OBS: Inicialmente, pensamos em criar uma interface que gerasse um time ideal de Pokémons com base nas fraquezas dos pokémons selecionados pelo usuário. Contudo, no planejamento das primeiras sprints, decidimos alterar a ideia inicial para entregar o projeto, concluindo conforme os objetivos e tempo estimado.
 
 ## 5. Protótipo de Alta Fidelidade ##
 
