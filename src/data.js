@@ -1,5 +1,5 @@
 const sortByName = (data, valor) => {
-    const newData = [].concat(data);
+  const newData = [].concat(data);
   if (valor === "A-Z") {
     newData.sort((a, b) => a.name.localeCompare(b.name));
   } else {
@@ -13,17 +13,17 @@ const sortByNum = (data, valor) => {
   if (valor === "0-9") {
     newData.sort((a, b) => {
       if (a.num > b.num) {
-        return 1; 
+        return 1;
       } else {
-        return -1; 
+        return -1;
       }
     });
   } else {
     newData.sort((a, b) => {
       if (a.num < b.num) {
-        return 1; 
+        return 1;
       } else {
-        return -1; 
+        return -1;
       }
     });
   }
